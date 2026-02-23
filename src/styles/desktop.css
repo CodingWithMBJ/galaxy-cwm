@@ -1,7 +1,5 @@
 @media (min-width: 1024px) {
-  /* .action-menu {
-    transform: translateY(45vh);
-    margin: auto;
-    animation: slideOnUp 0.5s ease-in-out;
-  } */
+  .action-menu-nav {
+    bottom: 10px;
+  }
 }

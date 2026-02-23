@@ -4,7 +4,8 @@ import "./styles/index.css";
 import "./styles/animations.css";
 import "./styles/tablet.css";
 import "./styles/desktop.css";
-import App from "./styles/App.css";
+import "./styles/App.css";
+import App from "./App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

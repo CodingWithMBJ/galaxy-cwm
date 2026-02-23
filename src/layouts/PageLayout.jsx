@@ -1,9 +1,26 @@
-const PageLayout = ({ children }) => {
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import ActionMenu from "../components/ActionMenu";
+
+import Header from "../components/Header";
+
+const PageLayout = ({ isDesktop }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const chosenPath = location.pathname === "/";
+  const showMenu = isDesktop || chosenPath;
+
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <div className="flex flex-1">
-        <main className="flex-1 p-6 pb-24 md:pb-6">{children}</main>
-      </div>
+    <div className="min-h-screen w-screen flex flex-col">
+      {!isDesktop && !showMenu && <Header onBack={() => navigate("/")} />}
+
+      <main className={`main flex-1 ${showMenu ? "pb-24" : ""}`}>
+        <div className="mx-auto w-full h-full px-4 py-8">
+          <Outlet />
+        </div>
+      </main>
+
+      {showMenu && <ActionMenu />}
     </div>
   );
 };
