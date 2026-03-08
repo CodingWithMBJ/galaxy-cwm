@@ -1,7 +1,8 @@
 @media (min-width: 1024px) {
-  /* .action-menu {
-    transform: translateY(45vh);
-    margin: auto;
-    animation: slideOnUp 0.5s ease-in-out;
-  } */
+  .nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 30vw;
+  }
 }

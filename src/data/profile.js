@@ -9,13 +9,13 @@ import {
 export const profile = {
   myName: "Mohamed",
   fullName: "Mohamed Jalloh",
-  handle: "@codingwithmbj",
+  handle: "@CodingWithMBJ",
   myTitle: "Frontend Engineer",
   location: "St Paul, MN",
   availability: "Available for freelance & full-time roles.",
   image: "/heroImg.png",
   intro:
-    "Full-stack software engineer who specialize in Frontend building modern, responsive web apps with React, TypeScript, and clean UI systems.",
+    "Developer who specialize in Frontend building modern, responsive web apps with React, TypeScript, and clean UI systems.",
   about:
     "I’m a full-stack software engineer who specializes in frontend development, building modern, responsive web applications with React, TypeScript, and clean, user-focused UI systems. I enjoy turning ideas and designs into polished, accessible experiences that feel fast and intuitive.Most of my work is centered around React, modern JavaScript, and tools like Vite and Tailwind CSS. I also have backend experience working with Node.js, Python, Go, and Java, along with APIs and database-driven applications. This full-stack perspective helps me collaborate effectively across the stack and build complete, real-world solutions. I’m always refining my fundamentals and shipping projects that push my skills forward.",
   skills: [
