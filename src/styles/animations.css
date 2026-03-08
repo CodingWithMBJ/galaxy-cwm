@@ -1,0 +1,17 @@
+@keyframes slideOnUp {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes slideOnDown {
+  from {
+    transform: translateY(45vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
